@@ -1,0 +1,43 @@
+{
+  "name": "cascade-swarm",
+  "version": "0.1.0",
+  "description": "Point a swarm of your own coding agents (Claude Code or Codex CLI) at a goal. Workers in separate git worktrees, coordinated through Cascade, stopping when your check passes.",
+  "license": "MIT",
+  "author": "Cascade Dynamics",
+  "homepage": "https://cascadedynamics.ai",
+  "keywords": [
+    "agents",
+    "swarm",
+    "claude-code",
+    "codex",
+    "coding-agents",
+    "parallel",
+    "git-worktree",
+    "cascade",
+    "coordination"
+  ],
+  "type": "module",
+  "bin": {
+    "cascade-swarm": "bin/cascade-swarm.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "hooks/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"test/*.test.mjs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cascade-Dynamics-AI/cascade-swarm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cascade-Dynamics-AI/cascade-swarm/issues"
+  }
+}
